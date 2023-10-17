@@ -1,4 +1,3 @@
-
 torchrun --nproc_per_node=1 --master_port=1212  train.py --model_name_or_path ./7b   --data_path ./qa_10001.json --bf16 True --output_dir ./output \
 --num_train_epochs 3 \
 --per_device_train_batch_size 1 \
@@ -18,3 +17,4 @@ torchrun --nproc_per_node=1 --master_port=1212  train.py --model_name_or_path ./
 --tf32 False \
 --deepspeed ./configs/s2.json \
 --eval_steps 2000
+--use_peft False
