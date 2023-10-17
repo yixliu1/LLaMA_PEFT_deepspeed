@@ -1,0 +1,17 @@
+numpy
+rouge_score
+fire
+openai
+#transformers>=4.28.1
+torch
+sentencepiece
+tokenizers>=0.13.3
+wandb
+transformers[torch]
+deepspeed
+pydantic<2.0.0
+peft
+boto3
+#git+https://github.com/huggingface/transformers
+#transformers==4.34.0
+#tokenizers==0.14.1
